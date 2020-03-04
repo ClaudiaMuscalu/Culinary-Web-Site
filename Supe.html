@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+<title>Supe creme</title>
+
+
+<link href="CSS-resp.css"  rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="javascript.js"></script>
+</head>
+<div class="navbar">   
+        <ul class="navList" id="nav_bar">
+            
+            <li><a class="list" href="file:///C:/Users/Claudia/Documents/Temahtml.html"><i class="fa fa-home"></i>Acasă</a></li>
+            <li class="dropdown"><a class="list" id="reflink" class="blockline" href="javascript:void(0)"><i class="fa fa-list" aria-hidden="true"></i>Categorii</a>
+                <div class="dropborder" >
+                    <div class="dropdown-content">
+                    <a class="drop" href="file:///C:/Users/Claudia/Documents/Supe.html">Supe creme</a>
+                    <a class="drop" href="file:///C:/Users/Claudia/Documents/Gustari_dulci.html">Gustări dulci</a>
+                    <a class="drop" href="file:///C:/Users/Claudia/Documents/Paste.html">Paste</a>
+                    <a class="drop" href="file:///C:/Users/Claudia/Documents/Salate.html">Salate</a>
+                </div></div>
+                </li>
+            <li><a class="list" href="file:///C:/Users/Claudia/Documents/Blog.html"><i class="fa fa-rss-square" aria-hidden="true"></i> Blog</a></li>
+            <li><a class="list" href="file:///C:/Users/Claudia/Documents/Contact.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+            </ul>
+
+
+        </div>
+<div class="chenar">
+<div class="scris">
+        <input type="checkbox" name="">
+        <div class="w3-container  w3-animate-top center">
+                <br> <br>  <br> <br> <br> 
+                  <p id="titlu">Supe</p>
+                </div>
+
+    <div>
+            <p style="color:#ad4601; font-weight: bold; filter: inherit;">Supă-cremă de dovleac</p>
+            <br> 
+            <img class="preparat-foto" src="supadovleac.jpg" alt="supadovleac">
+        </div>
+        <br>
+        <div>
+                <p>Supa-cremă de dovleac se numară printre acele preparate delicioase cărora nu le poți rezista niciodată.
+                     Iar partea bună este ca o poți pregăti foarte ușor la tine acasă.</p>
+                <br>
+                <p>Ingrediente:</p>
+                <ul  id="ingrediente" style="list-style-type:disc;">
+                        <li>un dovleac de 2-3 kilograme</li>
+                        <li>o ceapă mică</li>
+                        <li>2-3 căței de usturoi</li>
+                        <li>un cartof</li>
+                        <li>un morcov</li>
+                        <li>un ardei rosu</li>
+                        <li>o legătura de pătrunjel</li>
+                        <li>100 de mililitri de smântână</li>
+                        <li>sare</li>
+                        <li>piper</li> </ul>
+                      <br> 
+            </div>
+            
+            <div>
+                <strong style="margin-left: 20px;"> Mod de preparare: </strong>
+                <br> 
+            </div>
+
+
+    <div>
+        <p>În primul rând, curăță dovleacul de coajă, taie-l în două și scoate-i miezul și semințele, păstrând doar pulpa făcută cubulețe.
+             Amestecă-le pe acestea cu celelalte legume și lasă-le la fiert într-un vas cu apă până când cantitatea de lichid scade la jumatate. 
+             Apoi, strecoară legumele și pasează-le în blender alături de celelalte ingrediente. 
+             În funcție de cât de lichidă sau de densă iți doreșți să fie crema, poți adauga mai multe legume. 
+        </p>
+        <p>La final, adaugă sare, piper, 
+        ierburi aromatice, dar și câteva bucățele de caju: combinația este absolut delicioasă!</p>
+        <br> 
+    </div>
+    <div>
+            <p> Timp de preparare: 2h</p>
+            <p> Esti curios cat timp iti va lua prepararea acestei gustari?</p>
+            <p> Mai jos poti afla raspunsul!</p>
+            <h2 id="timer-text">0</h2>
+            <button id="btn-start"> Start gatit</button>
+            <button id="btn-pause">Stop</button>
+            
+            <script type=text/javascript>
+            const timerText=document.getElementById("timer-text");
+            const btnStart=document.getElementById("btn-start");
+            const btnpauza=document.getElementById("btn-pause");
+            
+            let count=0;
+            let intervalID;
+    
+           btnStart.addEventListener("click",function(){
+               intervalID=setInterval(function(){
+                   count+=1;
+                   timerText.textContent= count;
+    
+               }, 1000);
+           })
+    
+           btnpauza.addEventListener("click", function(){
+               clearInterval(intervalID);
+           })
+    
+            </script>
+        </div>
+    <p>Poftă bună!</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+<title>Paste</title>
+
+<link href="CSS-resp.css"  rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="javascript.js"></script>
+</head>
+<div class="navbar" id="nav_bar">   
+        <ul class="navList">
+            
+            <li><a class="list" href="file:///C:/Users/Claudia/Documents/Temahtml.html"><i class="fa fa-home"></i>Acasă</a></li>
+            <li class="dropdown"><a class="list" id="reflink" class="blockline" href="javascript:void(0)"><i class="fa fa-list" aria-hidden="true"></i>Categorii</a>
+                <div class="dropborder" >
+                    <div class="dropdown-content">
+                    <a class="drop" href="file:///C:/Users/Claudia/Documents/Supe.html">Supe creme</a>
+                    <a class="drop" href="file:///C:/Users/Claudia/Documents/Gustari_dulci.html">Gustări dulci</a>
+                    <a class="drop" href="file:///C:/Users/Claudia/Documents/Paste.html">Paste</a>
+                    <a class="drop" href="file:///C:/Users/Claudia/Documents/Salate.html">Salate</a>
+                </div></div>
+                </li>
+            <li><a class="list" href="file:///C:/Users/Claudia/Documents/Blog.html"><i class="fa fa-rss-square" aria-hidden="true"></i> Blog</a></li>
+            <li><a class="list" href="file:///C:/Users/Claudia/Documents/Contact.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+            </ul>
+
+
+        </div>
+<div class="chenar">
+<div class="scris">
+        <div class="w3-container  w3-animate-top center">
+                <br> <br> <br> <br> <br> <br>
+                  <p id="titlu">Paste</p>
+                </div>
+        
+        <div class="scris">
+            <p  style="font-style: italic;">
+                    Italia este o destinaţie de vis pentru oricine 
+                    iubeşte mâncarea şi băutura bună. Dar nu e nevoie 
+                    să călătoreşti ca să te delectezi cu deliciile italiene. Poţi aduce Italia la tine 
+                    acasă dacă încerci reţetele delicioase de paste sau pizza.
+            </p>
+            <br>  
+        </div>
+        
+        <div>
+            <p style="text-align: left; color: #560605; font-weight: bold; margin-left: 20px;">Paste cremoase cu ciuperci</p>
+            <br> 
+            <img class="preparat-foto" src="pastee.jpg" alt="paste" style="margin-left:5px;">
+        </div>
+         <br><br>
+
+        <div class="scris">
+            <p>Cea mai simplă și gustoasă rețetă de paste cu ciuperci este rețeta pe care ți-am pregătit-o mai jos. Rețeta se face din ingrediente simple,
+                 puține și deloc costisitoare, în timp record și cu minimum de efort.</p>
+            <br> 
+            <br> 
+            <hr>
+            <p>Ingrediente:</p>
+            <ul  id="ingrediente" style="list-style-type:disc;">
+                    <li>200 g paste;</li>
+                    <li>200-350 g ciuperci;</li>
+                    <li>2-3 linguri de unt;</li>
+                    <li>1 lingură de ulei de măsline;</li>
+                    <li>2 căței usturoi;</li>
+                    <li>1/2 ceapă, tocată fin;</li>
+                    <li>200 g parmezan ras;</li>
+        
+                  </ul>
+                  <hr>
+        </div>
+        
+        <div>
+            <strong style="margin-left: 20px;"> Mod de preparare: </strong>
+            <br> 
+        </div>
+        
+        <div>
+            <p>
+                <ol type="1" style="margin-left:0px">
+        
+                   <li> Pastele se fierb conform instrucțiunilor de pe pachet, dar cu un minut mai puțin.
+                        Păstrează o cană de apă de la paste, separat și apoi scurge-le pe restul.</li>
+                    <li>Feliază ciupercile. Topește 1 lingură de unt la foc mic, într-o tigaie mare. Călește un minut ceapa și usturoiul.</li>
+                    <li>Dă focul mai mare, adaugă ciupercile și lasă-le la făcut până când se evaporă apa din ele. Mai lasă-le pe foc încă 5 minute, până când încep să se rumenească.</li>
+                    <li>Adaugă restul de 2 linguri de unt și amestecă până se topește.</li>
+                    <li>Adaugă pastele, 3 sferturi din apa ținută de la paste și parmezanul ras. Amestecă ușor și cât mai larg pentru a cuprinde toată compoziția și continuă până începe să se formeze sosul cremos pentru paste. Dacă pastele par uscate, mai adaugă apă.</li>
+                    <li>Asezonează cu sare și piper.</li>
+                </ol>
+                <div>
+                        <p> Timp de preparare: 2h</p>
+                        <p> Esti curios cat timp iti va lua prepararea acestei gustari?</p>
+                        <p> Mai jos poti afla raspunsul!</p>
+                        <h2 id="timer-text">0</h2>
+                        <button id="btn-start"> Start gatit</button>
+                        <button id="btn-pause">Stop</button>
+                        
+                        <script type=text/javascript>
+                        const timerText=document.getElementById("timer-text");
+                        const btnStart=document.getElementById("btn-start");
+                        const btnpauza=document.getElementById("btn-pause");
+                        
+                        let count=0;
+                        let intervalID;
+                
+                       btnStart.addEventListener("click",function(){
+                           intervalID=setInterval(function(){
+                               count+=1;
+                               timerText.textContent= count;
+                
+                           }, 1000);
+                       })
+                
+                       btnpauza.addEventListener("click", function(){
+                           clearInterval(intervalID);
+                       })
+                
+                        </script>
+                    </div>
+                <p>Poftă bună!</p>
+            <br> 
+            </div>
+</div>  
+</div> 
+</body>
+</html>     
