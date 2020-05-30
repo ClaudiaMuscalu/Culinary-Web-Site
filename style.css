@@ -1,0 +1,254 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    margin-top:0;
+    display: flex;
+    flex-direction: column;
+}
+@font-face {
+    font-family:bellota;
+    src:url("fonts/Bellota-Italic.otf")
+}
+
+@font-face {
+    font-family:bellota_regular;
+    src:url("fonts/Bellota-Regular.otf")
+}
+
+body {
+    background:url(images/background1.jpg)
+    no-repeat center center fixed;
+    background-size: cover;
+    font-family: bellota;
+    text-align: justify;
+    font-size: 20px;
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    margin: 0px;
+    height: auto;
+    overflow: hidden;
+    color: whitesmoke;
+    background-color: #A04228;
+}
+
+.chef {
+    height: auto;
+    width: 13%;
+    margin: auto;
+}
+
+.chef h2{
+    text-align: center;
+}
+
+.chef img {
+    display: block;
+    width: 70%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.food img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.topnav {
+    background-color:#A04228 ;
+    overflow: hidden;
+    margin-top: -1px;
+}
+
+.topnav li{
+    display: inline;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav .icon {
+    display: none;
+}
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+ 
+.dropdown .dropbtn {
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#A04228;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+} 
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(255,244,228,0.75);
+    color: white;
+}
+  
+.dropdown-content a:hover {
+    background-color: rgba(255,244,228,0.75);
+    color: black;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 1%;
+}
+
+.login{
+    float: right;
+    margin-right: 5%;
+    color: whitesmoke;
+}
+
+showcase h1{
+    color:whitesmoke;
+    font-family: bellota_regular;
+    text-align: center;
+}
+
+.category {
+    color: whitesmoke;
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    font-family: bellota;
+}
+
+.chef img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.food img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.food {
+    width: 75%;
+    height: 700px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin: 3%;
+}
+
+.btn {
+    background-color: #FFB452;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    margin-left: 45%;
+    font-weight: bold;
+    align-content: center;
+}
+
+.chenar
+{
+    background-color: rgba(255,244,228,0.75);
+    margin-left:80px;
+    margin-right:80px;
+    margin-top: -50px;  
+    height: 100%; 
+}
+
+@media screen and (max-width: 600px) {
+   
+    .topnav li {
+      float: left;
+      margin-left: 25%;
+      display: block;
+      width: 100%;
+      font-size: 20px;
+    }
+
+    .topnav li a{
+        font-size: 25px;
+    }
+
+    .topnav .dropbtn{
+        font-size: 25px;
+
+    }
+
+    .dropdown-content {
+        position: relative;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    .chef{
+        align-content: center;
+        width: 100px;
+
+    }   
+
+    .category{
+        display: block;
+    }
+
+    .food{
+        width: auto;
+        height: 70%;
+    }  
+
+    .btn{
+        margin-left: 30%;
+    }
+  }
+
+@font-face {
+    font-family:f;
+    src:url("fonts/Quanto.ttf")
+}
+
+h2 {
+font-family:f;
+font-size: 2rem;
+}

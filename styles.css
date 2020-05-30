@@ -1,0 +1,323 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    margin-top:0;
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    color: #9a5919;
+    font-size: 35px;
+}
+
+@font-face {
+    font-family:bellota;
+    src:url("fonts/Bellota-Italic.otf")
+}
+body {
+    background:url(images/background1.jpg)
+    no-repeat center center fixed;
+    background-size: cover;
+    font-family: bellota;
+    text-align: justify;
+    font-size: 20px;
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    margin: 0px;
+    height: auto;
+    overflow: hidden;
+    color: whitesmoke;
+    background-color: #A04228;
+}
+
+.chef {
+    height: auto;
+    width: 13%;
+    margin: auto;
+}
+
+.login{
+    float: right;
+    margin-right: 5%;
+    color: whitesmoke;
+}
+
+.chef h2{
+    text-align: center;
+}
+
+.chef img {
+    display: block;
+    width: 70%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.food img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.topnav {
+    background-color:#A04228 ;
+    overflow: hidden;
+    margin-top: -1px;
+}
+
+.topnav li{
+    display: inline;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav .icon {
+    display: none;
+}
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+ 
+.dropdown .dropbtn {
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#A04228;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+} 
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(255,244,228,0.75);
+    color: white;
+}
+  
+.dropdown-content a:hover {
+    background-color: rgba(255,244,228,0.75);
+    color: black;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.chenar {
+    background-color: rgba(255,244,228,0.75);
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: auto; 
+    margin-top: 5vw;
+}
+
+.container{
+    margin: 5%;
+}
+
+@font-face {
+    font-family:sweet;
+    src:url("fonts/sweet\ purple.ttf")
+}
+
+@font-face {
+    font-family:f;
+    src:url("fonts/Quanto.ttf")
+}
+
+h2 {
+    margin-left: 3%;
+    font-family:f;
+    font-size: 2rem;
+}
+
+
+.w3-container {
+    display: inline-flex;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.w3-container p {
+    font-family: sweet;
+    font-size: 100px;
+    color: #ad4601;
+    height: 50%;
+    margin: 0px;
+}
+
+.w3-container img {
+    margin-top: 18%;
+    width: 50px;
+    height: 50px;
+}
+
+/* animatie pentru titlu*/
+.w3-animate-top {
+    position:relative;
+    animation:animatetop 0.4s;
+}
+@keyframes animatetop{
+    from{top:-300px; opacity:0} to {top:0; opacity:1}
+}
+
+.preparat{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.preparat p{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;  
+}
+
+.preparat img{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    display: table;
+    width: 100%;
+}
+
+.column {
+    padding: 10px;
+    width: 50%;
+    display: table-cell;
+}
+
+footer {
+    background-color:rgba(255,244,228,0.75);
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: auto; 
+}
+  
+.subsol {
+    text-align: justify;
+    margin: 5%;
+}
+
+.recenzie{
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.form{
+    display: inline-flex;
+    padding: 10px;
+    text-align: center;
+}
+
+.caseta1{
+    width:30%;
+    height: 30px;
+  }
+
+.rating{
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+   
+    .topnav li {
+      float: left;
+      margin-left: 27%;
+      display: block;
+      width: 100%;
+      font-size: 20px;
+    }
+
+    .topnav li a{
+        font-size: 25px;
+    }
+
+    .topnav .dropbtn{
+        font-size: 25px;
+
+    }
+
+    .dropdown-content {
+        position: relative;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    .chef{
+        align-content: center;
+        width: 100px;
+
+    }   
+
+    .w3-container p{
+        align-content: center;
+    }
+
+    .food{
+        width: auto;
+        height: 70%;
+    }  
+
+    .btn{
+        margin-left: 30%;
+    }
+
+    .column{
+        display: block;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .w3-container p{
+        font-size: 70px;
+    } 
+  }
+
+
+
+

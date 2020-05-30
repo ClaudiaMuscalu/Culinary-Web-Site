@@ -1,0 +1,107 @@
+@font-face {
+    font-family:bellota;
+    src:url("fonts/Bellota-Italic.otf")
+}
+
+body{
+    margin : 0;
+    padding: 0;
+    background:url(images/background.jpg)
+    no-repeat center center fixed;
+    background-size: cover;
+    font-family: bellota;  
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5%;
+    color:whitesmoke;
+}
+
+.formbox{
+    position: center;
+    background-color: dd7631;
+    color: black;
+    width: 40%;
+    height: 395px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;  
+    border-radius: 7px;
+}
+.continut{
+    margin-top: 4%;
+}
+
+p{
+    text-align: center;
+    font-size: larger;
+}
+input{
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 30px;
+}
+
+.btn{
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #A04228;
+}
+
+@media screen and (max-width: 600px) {
+
+    .formbox{
+        width: 80%;
+        margin: auto;
+        height: auto;
+    }
+
+    input{
+        width: 80%;
+    }
+}
+
+@media screen and (width: 768px) {
+
+    .formbox{
+        width: 70%;
+        height: 750px;
+        margin: auto;
+    }
+
+    body{
+        font-size: 40px;
+    }
+
+    input{
+        width: 80%;
+        height: 50px;
+    }
+}
+
+@media screen and (width: 1024px) {
+
+    .formbox{
+        width: 70%;
+        height: 750px;
+        margin: auto;
+    }
+
+    body{
+        font-size: 40px;
+    }
+
+    input{
+        width: 80%;
+        height: 50px;
+    }
+    
+}

@@ -1,5 +1,5 @@
 {
-  "name": "node-server",
+  "name": "server",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,8 +7,16 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "This project is a culinary site using HTML, CSS and JavaScript technologies.",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaudiaMuscalu/Culinary-Web-Site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ClaudiaMuscalu/Culinary-Web-Site/issues"
+  },
+  "homepage": "https://github.com/ClaudiaMuscalu/Culinary-Web-Site#readme"
 }
