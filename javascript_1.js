@@ -8,8 +8,6 @@ function main()
     getComments();
 }
 
-// cerinta de 0,5 puncte
-// Task nivel 1 - cerinta 16
 function hey_user()
 {
     let name = prompt("Cum te numești?");
@@ -23,8 +21,6 @@ function hey_user()
     alert("Salut, " + name.toString());
 }
 
-// cerinta de 1 punct
-// Task nivel 2 - cerinta 13
 function numar_cuvinte()
 {
     var nr_cuvinte = 0;
@@ -55,8 +51,6 @@ function numar_cuvinte()
     document.getElementById("nrcuvinte").value = nr_cuvinte;
 }
 
-// cerinta 1 punct
-// Task nivel 2 - cerinta 2
 function afisareCuvantCuCuvant(destinatie, mesaj, viteza)
 {
     var mes = mesaj.split(" ");
@@ -73,8 +67,6 @@ function afisareCuvantCuCuvant(destinatie, mesaj, viteza)
     }, viteza);
 }
 
-// cerinta 2 puncte
-// Task nivel 4 - cerinta 7
 function submitData()
   {
       let nume = document.getElementById("name").value;
@@ -175,7 +167,7 @@ function displayComments(data){
 
         img_plus.addEventListener("click",  function(){
 
-            if (typeof(Storage) !== "undefined") {
+            if (typeof(Storage) != "undefined") {
  
                 x = Number(localStorage.getItem(key_plus[i])) + 1;
                 localStorage.setItem(key_plus[i], x);

@@ -5,8 +5,6 @@ function main()
     afisareLiteraCuLitera();
 }
 
-// cerinta 1 punct
-// Task nivel 2 - cerinta 3
 function afisareLiteraCuLitera()
 {
     var titlu = "Contacte";

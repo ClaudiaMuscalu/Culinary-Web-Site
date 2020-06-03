@@ -7,8 +7,6 @@ function main()
     getRating();
 }
 
-// cerinta de 1 punct
-// Task nivel 2 - cerinta 13
 function numar_cuvinte()
 {
     var nr_cuvinte = 0;
@@ -39,8 +37,6 @@ function numar_cuvinte()
     document.getElementById("nrcuvinte").value = nr_cuvinte;
 }
 
-// cerinta 0,5
-// Task nivel 1 - cerinta 5
 function rastoarna_lista()
 {
     var lista = document.getElementById("ingrediente").children;
@@ -57,8 +53,6 @@ function rastoarna_lista()
     document.getElementById("ingrediente").innerHTML = txt;
 }
 
-// cerinta 2 puncte
-// Task nivel 4 - cerinta 4
 function submitData()
   {
     let nume = document.getElementById("nume_recenzie").value;
@@ -94,7 +88,6 @@ function submitData()
     }).then((json)=>{
         if(json.Status === "OK"){
         console.log(json);
-
         }
 
         else
